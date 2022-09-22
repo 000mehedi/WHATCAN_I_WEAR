@@ -13,6 +13,54 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+    <nav class="navbar">
+      <div class="container">
+        <h6>Don't know what to wear? We got you covered 😅</h6>
+        <h3>Where do you wanna go?</h3>
+        <div class="location-input">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Location"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+            id="location"
+          />
+          <div class="input-group-append">
+            <button
+              onclick="getLocation(); getClothing();"
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Click Here!
+            </button>
+          </div>
+        </div>
+        <h3>Weather:</h3>
+
+        <div class="weather-section">
+          <div class="icons-section">
+            <div class="icons">
+              <p class="weather" id="day1"></p>
+              <div class="image">
+                <img src="default.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
