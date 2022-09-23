@@ -34,56 +34,70 @@ function getClothing(){
 
         if(temp < -3.9){
             document.getElementById("head").innerHTML= "Head: Beanie";
+            document.getElementById("head_img").src = "./images/beanie.png";
 
             document.getElementById("top").innerHTML = "Top: Winter Jacket";
+            document.getElementById("top_img").src = "./images/winter-jacket.png";
 
-            document.getElementById("bottom").innerHTML = "Bottom : Winter Pants";
+            document.getElementById("bottom").innerHTML = "Bottom : Winter Pants with thermals";
+            document.getElementById("bottom_img").src = "./images/woolenpants.png";
 
             document.getElementById("foot").innerHTML = "Foot: WaterProof Winter Shoes";
+            document.getElementById("foot_img").src = "./images/boots.png";
         }
         else if (temp < 6.67 ){
-            document.getElementById("head").innerHTML= "Head: Beanie";
-            
+            document.getElementById("head_img").innerHTML= "Head: Beanie";
+            document.getElementById("head_img").src = "./images/beanie.png";
 
-            document.getElementById("top").innerHTML = "Pants: Woolen pants with thermals";
-            
+            document.getElementById("top_img").innerHTML = "Top: Overcoat";
+            document.getElementById("top_img").src = "./images/overcoat.png";
 
-            document.getElementById("bottom").innerHTML = "Torso: Light to medium coat";
-           
+            document.getElementById("bottom_img").innerHTML = "Bottom: Woolen Pants";
+            document.getElementById("bottom_img").src = "./images/woolenpants.png";
 
-            document.getElementById("foot").innerHTML = "Shoes: Boots";
+            document.getElementById("foot_img").innerHTML = "Foot: WaterProof Winter Shoes";
+            document.getElementById("foot_img").src = "./images/boots.png";
             
 
     }
     else if (temp < 17.8) {
-        document.getElementById("head").innerHTML= "Head: Beanie";
+        document.getElementById("head_img").innerHTML= "Head: Beanie";
+        document.getElementById("head_img").src = "./images/beanie.png";
 
-
-        document.getElementById("top").innerHTML = "Top: Windbreaker";
+        document.getElementById("top_img").innerHTML = "Top: Fleece";
+        document.getElementById("top_img").src = "./images/fleece.png";
         
-        document.getElementById("bottom").innerHTML = "Bottom: Jeans";
-       
-        document.getElementById("foot").innerHTML = "Shoes: Boots";
+        document.getElementById("bottom_img").innerHTML = "Bottom: Jeans";
+        document.getElementById("bottom_img").src = "./images/jeans.png";
+
+        document.getElementById("foot_img").innerHTML = "Shoes: Boots";
+        document.getElementById("foot_img").src = "./images/tennisshoes.png";
     }
     else if (temp <26.1) {
-        document.getElementById("head").innerHTML= "Head: Literally Anything";
+        document.getElementById("head_img").innerHTML= "Head: Literally Anything";
+        document.getElementById("head_img").src = "./images/no_need.png";
        
-        document.getElementById("top").innerHTML = "Top: Full Sleeves";
+        document.getElementById("top_img").innerHTML = "Top: Tshirt";
+        document.getElementById("top_img").src = "./images/tshirt.png";
         
-        document.getElementById("bottom").innerHTML = "Bottom: Chinos";
+        document.getElementById("bottom_img").innerHTML = "Bottom: Shorts";
+        document.getElementById("bottom_img").src = "./images/shorts.png";
        
-        document.getElementById("foot").innerHTML = "Shoes: Tennis shoes";
+        document.getElementById("foot_img").innerHTML = "Shoes: Tennis shoes";
+        document.getElementById("foot_img").src = "./images/tennisshoes.png";
         
 }
 else  {
-    document.getElementById("head").innerHTML= "Head: As you wish";
+    document.getElementById("head_img").innerHTML= "Head: A hat maybe?";
+    document.getElementById("head_img").src = "./images/hat.png";
    
-    document.getElementById("top").innerHTML = "Top: Half sleeves";
+    document.getElementById("top_img").innerHTML = "Top: Tshirts";
+    document.getElementById("top_img").src = "./images/tshirt.png";
    
 
-    document.getElementById("bottom").innerHTML = "Bottom: Short sleeves";
-    
+    document.getElementById("bottom_img").innerHTML = "Bottom: Short sleeves";
+    document.getElementById("bottom_img").src = "./images/shorts.png";
 
-    document.getElementById("foot").innerHTML = "Shoes: Sandals";
-    
+    document.getElementById("foot_img").innerHTML = "Shoes: Sandals";
+    document.getElementById("foot_img").src = "./images/sandals.png";
 }})}
