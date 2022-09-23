@@ -24,43 +24,148 @@
     ></script>
 
     <script src="main.js"></script>
-    <nav class="navbar">
-      <div class="container">
-        <h6>Don't know what to wear? We got you covered 😅</h6>
-        <h3>Where do you wanna go?</h3>
-        <div class="location-input">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Enter Location"
-            aria-label="Recipient's username"
-            aria-describedby="button-addon2"
-            id="location"
-          />
-          <div class="input-group-append">
-            <button
-              onclick="getLocation(); getClothing();"
-              class="btn btn-outline-secondary"
-              type="button"
-              id="button-addon2"
-            >
-              Click Here!
-            </button>
-          </div>
-        </div>
-        <h3>Weather:</h3>
+    <div class="container-top">
+      <h1>WHATCAN_|_WEAR?</h1>
+    </div>
 
-        <div class="weather-section">
-          <div class="icons-section">
-            <div class="icons">
-              <p class="weather" id="day1"></p>
-              <div class="image">
-                <img src="default.png" alt="" />
-              </div>
-            </div>
+    <br />
+
+    <div class="container">
+      <h6>Don't know what to wear? We got you covered 😅</h6>
+      <h3>Where do you live?</h3>
+      <div class="location-input mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Location"
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+          id="location"
+        />
+        <br />
+        <div class="input-group-append">
+          <button
+            onclick="getLocation(); getClothing();"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button"
+          >
+            Click Here!
+          </button>
+        </div>
+      </div>
+      <h3>Weather:</h3>
+
+      <div class="weather-section">
+        <div class="icons-section">
+          <div class="icons">
+            <p class="weather" id="day1"></p>
+            <iframe
+              src="https://giphy.com/embed/3og0IOUWB5AZoP6la0"
+              width="200"
+              height="200"
+              frameborder="0"
+              class="giphy-embed"
+              allowfullscreen
+            ></iframe>
+
+            <p class="tempValues" id="day1Temp">Temp:</p>
+            <br />
+            <p class="feelslikeValues" id="day1FeelsLike">Feels Like:</p>
+            <br />
+            <p class="condition" id="day1Condition">Temp:</p>
+          </div>
+
+          <div class="icons">
+            <p class="weather" id="day2"></p>
+            <iframe
+              src="https://giphy.com/embed/3QymGBm2EwlfToiyCG"
+              width="200"
+              height="200"
+              frameborder="0"
+              class="giphy-embed"
+              allowfullscreen
+            ></iframe>
+            <p class="tempValues" id="day2Temp">Temp:</p>
+            <br />
+            <p class="feelslikeValues" id="day2FeelsLike">Feels Like:</p>
+            <br />
+            <p class="condition" id="day2Condition">Temp:</p>
+          </div>
+
+          <div class="icons">
+            <p class="weather" id="day3"></p>
+            <iframe
+              src="https://giphy.com/embed/12wteMTXxjLaVO"
+              width="200"
+              height="200"
+              frameborder="0"
+              class="giphy-embed"
+              allowfullscreen
+            ></iframe>
+
+            <p class="tempValues" id="day3Temp">Temp:</p>
+            <br />
+            <p class="feelslikeValues" id="day3FeelsLike">Feels Like:</p>
+            <br />
+            <p class="condition" id="day3Condition">Temp:</p>
           </div>
         </div>
       </div>
-    </nav>
+
+      <div class="container1">
+        <h3>Clothing Suggestions:</h3>
+
+        <div class="icons2">
+          <p id="head">Head:</p>
+          <iframe
+            src="https://giphy.com/embed/lPLaTfNvG6YPUuUHtc"
+            width="200"
+            height="200"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="icons2">
+          <p id="top">Top:</p>
+          <iframe
+            src="https://giphy.com/embed/3HpSslnzl7mKx0Yzhi"
+            width="200"
+            height="200"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="icons2">
+          <p id="bottom">Bottom:</p>
+          <iframe
+            src="https://giphy.com/embed/3o6Zt81XtsGtno6Cju"
+            width="200"
+            height="200"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="icons2">
+          <p id="foot">Foot:</p>
+          <iframe
+            src="https://giphy.com/embed/6mXvmpa2USKfm"
+            width="200"
+            height="200"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p id="snow"></p>
+      </div>
+    </div>
   </body>
 </html>

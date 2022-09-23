@@ -1,18 +1,38 @@
 body {
   background-color: dimgray;
 }
+
+.container-top {
+  background-color: whitesmoke;
+  position: center;
+}
 .icons {
   display: inline-block;
   float: left;
 
   margin: 50px;
-  width: 240px;
-  height: 240px;
+  width: 215px;
+  height: 380px;
 
   text-align: center;
 
   font-weight: bold;
-  border: 2px solid rosybrown;
+  border: 3px solid rosybrown;
+  border-radius: 2.5px;
+}
+
+.icons2 {
+  display: inline-block;
+  float: center;
+
+  margin: 50px;
+  width: 240px;
+  height: 275px;
+
+  text-align: center;
+
+  font-weight: bold;
+  border: 3px solid rosybrown;
 }
 .image {
   height: 150px;
@@ -24,6 +44,10 @@ body {
   text-align: center;
   font-weight: 500;
 }
+.navbar {
+  align-items: center;
+}
+
 .tempValues,
 .feelslikeValues,
 .condition {
@@ -40,10 +64,11 @@ body {
   margin-top: auto;
   float: left;
 }
-.container2 {
-  margin-top: auto;
-  float: left;
-}
+
 h6 {
   text-align: center;
+}
+h1 {
+  text-align: center;
+  margin-left: 100;
 }
