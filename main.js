@@ -7,7 +7,7 @@ function getLocation(){
     fetch("https://api.openweathermap.org/data/2.5/forecast?q="+location.value+"&appid=c9dbfe419caaad8dfe99e90d39c81b98")
 .then(response=>response.json())
 .then(data => {
-    for(i = 0; i<4; i++){
+    for(i = 0; i<3; i++){
         document.getElementById("day" + (i+1) + "Temp").innerHTML = "Temp:" + Number(data.list[8*i].main.temp - 273.15).toFixed(1)+ "°";
         document.getElementById("day" + (i+1) + "FeelsLike").innerHTML = "Feel:" + Number(data.list[8*i].main.feels_like - 273.15).toFixed(1)+ "°";
         document.getElementById("day" + (i+1) + "Condition").innerHTML = String(data.list[8*i].weather[0].main);
